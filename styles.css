@@ -159,12 +159,25 @@ a {
 }
 
 .logo-svg {
-  color: var(--color-primary);
   flex-shrink: 0;
 }
 
-.navbar:not(.scrolled) .logo-svg {
-  color: #fff;
+.logo-bg {
+  fill: var(--color-primary);
+  transition: fill 0.3s ease;
+}
+
+.logo-cross {
+  fill: #fff;
+  transition: fill 0.3s ease;
+}
+
+.navbar:not(.scrolled) .logo-bg {
+  fill: rgba(255,255,255,0.25);
+}
+
+.navbar:not(.scrolled) .logo-cross {
+  fill: #fff;
 }
 
 .logo-text-group {
